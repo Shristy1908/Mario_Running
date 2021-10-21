@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main{
+    width: 120%;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat; 
+    background-size: 85% 100%;
+    position: relative;
+}
+.child img{
+    position: absolute;
+    bottom: 66px;
+    animation: mario 7s  infinite linear;
+}
+@keyframes mario{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 80%;
+    }
+}
+.child h2{
+    color: white;
+    text-transform: uppercase;
+    font-family:serif;
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 40%;
+    animation:text 1s 1s infinite linear;
+}
+@keyframes text{
+    0%{
+        font-size: 40px;
+    }
+    100%{
+        font-size: 60px;
+    }
+}
